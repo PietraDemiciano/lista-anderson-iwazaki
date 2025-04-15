@@ -1,0 +1,22 @@
+algoritmo "VolumeLataDeOleo"
+
+
+constantes
+    pi: real = 3.14
+
+variaveis
+    raio, altura, volume: real
+    
+inicio
+    
+    escreva("Digite o raio da lata de óleo (em unidades): ")
+    leia(raio)
+    escreva("Digite a altura da lata de óleo (em unidades): ")
+    leia(altura)
+
+    
+    volume := pi * (raio * raio) * altura
+
+    
+    escreva("O volume da lata de óleo é: ", volume, " unidades cúbicas.\n")
+fimalgoritmo
