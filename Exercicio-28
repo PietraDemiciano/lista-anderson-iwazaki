@@ -1,0 +1,23 @@
+algoritmo "Vogal ou Consoante"
+var
+    letra: caractere
+
+inicio
+    
+    escreva("Digite uma letra: ")
+    leia(letra)
+
+    
+    se (letra == 'a' ou letra == 'A' ou
+        letra == 'e' ou letra == 'E' ou
+        letra == 'i' ou letra == 'I' ou
+        letra == 'o' ou letra == 'O' ou
+        letra == 'u' ou letra == 'U') entao
+    {
+        escreva("A letra ", letra, " é uma vogal.")
+    }
+    senao
+    {
+        escreva("A letra ", letra, " é uma consoante.")
+    }
+fimalgoritmo
