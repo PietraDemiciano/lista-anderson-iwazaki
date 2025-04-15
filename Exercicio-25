@@ -1,0 +1,31 @@
+algoritmo "DiasDoMes"
+
+
+variaveis
+    mes: inteiro
+    dias: inteiro
+
+inicio
+    
+    escreva("Digite o número do mês (1 a 12): ")
+    leia(mes)
+
+    
+    se mes = 1 ou mes = 3 ou mes = 5 ou mes = 7 ou mes = 8 ou mes = 10 ou mes = 12 entao
+        dias := 31
+    senao
+        se mes = 4 ou mes = 6 ou mes = 9 ou mes = 11 entao
+            dias := 30
+        senao
+            se mes = 2 entao
+                dias := 28 
+            senao
+                escreva("Mês inválido! Por favor, digite um número entre 1 e 12.\n")
+                pare
+            fimse
+        fimse
+    fimse
+
+    
+    escreva("O mês ", mes, " tem ", dias, " dias.\n")
+fimalgoritmo
