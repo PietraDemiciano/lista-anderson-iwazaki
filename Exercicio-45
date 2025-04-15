@@ -1,0 +1,17 @@
+algoritmo "MediaDe5Numeros"
+var
+    i: inteiro
+    numero, soma, media: real
+
+inicio
+    soma <- 0
+
+    para i de 1 ate 5 faca
+        escreva("Digite o ", i, "º número: ")
+        leia(numero)
+        soma <- soma + numero
+    fimpara
+
+    media <- soma / 5
+    escreval("A média dos 5 números é: ", media)
+fimalgoritmo
