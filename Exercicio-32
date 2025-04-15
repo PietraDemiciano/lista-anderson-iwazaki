@@ -1,0 +1,28 @@
+algoritmo "VerificaTipoDeCaractere"
+var
+    caractere: caractere
+
+inicio
+    escreva("Digite um caractere: ")
+    leia(caractere)
+
+    
+    se (caractere >= "a" e caractere <= "z") ou (caractere >= "A" e caractere <= "Z") entao
+        
+        caractere <- minusculo(caractere)
+
+        se caractere = "a" ou caractere = "e" ou caractere = "i" ou caractere = "o" ou caractere = "u" entao
+            escreval("É uma vogal.")
+        senao
+            escreval("É uma consoante.")
+        fimse
+
+    
+    senao se caractere >= "0" e caractere <= "9" entao
+        escreval("É um número.")
+
+    
+    senao
+        escreval("É um símbolo.")
+    fimse
+fimalgoritmo
