@@ -1,0 +1,14 @@
+algoritmo "NumerosESoma1a100"
+var
+    i, soma: inteiro
+
+inicio
+    soma <- 0
+
+    para i de 1 ate 100 faca
+        escreval(i)
+        soma <- soma + i
+    fimpara
+
+    escreval("A soma de todos os números de 1 até 100 é: ", soma)
+fimalgoritmo
