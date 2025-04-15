@@ -1,0 +1,22 @@
+algoritmo "IdadeEmAnosMesesEDias"
+
+
+variaveis
+    idadeEmDias: inteiro
+    anos: inteiro
+    meses: inteiro
+    dias: inteiro
+
+inicio
+    
+    escreva("Digite a idade em dias: ")
+    leia(idadeEmDias)
+
+    
+    anos := idadeEmDias / 365
+    meses := (idadeEmDias % 365) / 30
+    dias := (idadeEmDias % 365) % 30
+
+    
+    escreva("A idade é: ", anos, " anos, ", meses, " meses e ", dias, " dias.\n")
+fimalgoritmo
